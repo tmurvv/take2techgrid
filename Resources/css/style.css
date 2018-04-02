@@ -1,0 +1,59 @@
+.grid {
+    display: grid;
+    grid: repeat(2, auto) / repeat(6, 1fr);
+
+    grid-template-areas:
+        "l l l n n n"
+        "h h h h h h"
+        "s s s s s s"
+        "c c c c c c"
+
+}
+
+.subgrid {
+    display: grid;
+    grid: 1 auto / repeat(3, 1fr);
+    justify-content: space-around;
+    grid-auto-flow: column;
+}
+
+.logo {
+    height: 50px;
+   /* grid-area: l;*/
+}
+
+.grid div:nth-child(1) {
+    grid-area: l;
+}
+
+.grid div:nth-child(2) {
+    grid-area: n;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.grid div:nth-child(3) {
+    grid-area: h;
+}
+.grid div:nth-child(4) {
+    grid-area: s;
+}
+.grid div:nth-child(5) {
+    grid-area: c;
+}
+
+
+
+.mainNavItem {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.tileItem {
+
+}
+
+
+
+
+

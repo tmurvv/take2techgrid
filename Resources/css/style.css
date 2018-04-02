@@ -1,9 +1,47 @@
+/*////////////////////
+DOCUMENT INSTRUCTIONS
+////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+*:focus {outline:none;}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', san-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #cbcbcb;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #cbcbcb;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #cbcbcb;
+}
+
+
+/*////////////////////
+GRID INSTRUCTIONS
+////////////////////*/
 .grid {
     display: grid;
     grid: repeat(2, auto) / repeat(6, 1fr);
 
     grid-template-areas:
-        "l l l n n n"
+        "l n n n n n"
         "h h h h h h"
         "s s s s s s"
         "c c c c c c"
@@ -17,10 +55,6 @@
     grid-auto-flow: column;
 }
 
-.logo {
-    height: 50px;
-   /* grid-area: l;*/
-}
 
 .grid div:nth-child(1) {
     grid-area: l;
@@ -28,8 +62,9 @@
 
 .grid div:nth-child(2) {
     grid-area: n;
-    text-align: right;
-    padding-right: 15px;
+    align-self: center;
+    justify-self: end;
+
 }
 
 .grid div:nth-child(3) {
@@ -42,18 +77,119 @@
     grid-area: c;
 }
 
+/*////////////////////
+HEADER ELEMENT INSTRUCTIONS
+////////////////////*/
+header {
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(images/lightglassburstmytint.gif);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 400px;
+    height: 100vh;
+}
 
+.logo {
+    padding: 5px;
+    height: 100px;
+    opacity: .8;
+}
 
 .mainNavItem {
     display: inline-block;
     margin-right: 40px;
 }
 
-.tileItem {
-
+.mainNavItem a:link,
+.mainNavItem a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+    padding: 10px 10px;
+    letter-spacing: 1.3px;
+    word-spacing: 5px;
+    background-color: rgba(127, 143, 166, .7);
+    border-radius: 7px;
 }
 
+.mainNavItem a:hover,
+.mainNavItem a:active {
+    border-bottom: 2px solid #7f8fa6;
+}
 
+.mainHeading {
+    margin-top: 35px;
+}
+
+.mainHeadingText {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    word-spacing: 7px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.mobileMenuIcon {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 200%;
+}
+
+.subTitle {
+    margin-bottom: 100px;
+}
+.subTitleText {
+    font-size: 100%;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/*////////////////////
+BODY ELEMENT INSTRUCTIONS
+////////////////////*/
+
+.btn:link,
+.btn:visited {
+
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 7px;
+    height: 300px;
+    width: 300px;
+    border: 1px transparent #fff;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+    text-align: center;
+    box-shadow: -10px -10px 20px #faf6f6 inset;
+    background-color: #7f8fa6;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #718093;
+    border: 1px solid #718093;
+}
+
+.tile1 {
+    background-image: url(images/GradSurveyScreenShot.png);
+    background-position: center 80px;
+    background-size: 230px;
+    background-repeat: no-repeat;
+}
+
+.tile2 {
+    margin-top: 25px;
+}
 
 
 

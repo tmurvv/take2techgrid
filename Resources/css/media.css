@@ -1,0 +1,102 @@
+/*Big tablets to 1200px: 1023-1200px*/
+
+@media only screen and (max-width: 1200px) {}
+
+#sampleBackendCode img {
+    height: 270px;
+
+}
+
+/*Small tablets to big tablets: 768-1023px*/
+
+@media only screen and (max-width: 1024px) {
+    #sampleBackendCode img {
+        height: 240px;
+
+    }
+
+    @media only screen and (max-width: 950px) {
+        .btn:link,
+        .btn:visited {
+
+            height: 250px;
+            width: 200px;
+
+        }
+
+        h1 {
+            font-size: 140%;
+        }
+
+        .subTitleText {
+            font-size: 85%;
+        }
+
+        #sampleBackendCode img {
+            height: 200px;
+
+        }
+    }
+
+    /*Small phones to small tablets: 481-768px*/
+    @media only screen and (max-width: 768px) {
+
+        .logo {
+            height: 70px;
+        }
+
+        .mainNavItem {
+            display: none;
+        }
+
+        .mobileMenuIcon {
+            display: block;
+        }
+
+        header {
+            background-size: 150% 325px;
+        }
+        #sampleBackendCode img {
+            margin-left: 25%;
+
+        }
+        .footernavsubgrid {
+
+            grid-auto-flow: row;
+        }
+
+    }
+
+    @media only screen and (max-width: 690px) {
+
+        .subgrid {
+            justify-content: center;
+            grid-auto-flow: row;
+        }
+
+        .btn:link,
+        .btn:visited {
+            height: 300px;
+            width: 250px;
+        }
+
+        header {
+            height: 1200px;
+        }
+    }
+
+    /*Small < 580px*/
+    @media only screen and (max-width: 580px) {
+        .mainHeading {
+            margin-top: 15px;
+        }
+        #sampleBackendCode img {
+            margin-left: 17%;
+
+        }
+
+        .footernavsubgrid {
+            font-size: 80%;
+        }
+
+    }

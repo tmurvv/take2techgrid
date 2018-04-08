@@ -5,15 +5,15 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
-     <link rel="stylesheet" type="text/css" href="Resources/css/media.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media.css">
     <!--<link rel="stylesheet" type="text/css" href="Resources/css/gridlayout.css">-->
     <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--<script src="Resources\js\script.js"></script>-->
-    <title>GridMurvihill, Developer</title>
+    <script src="Resources\js\script.js"></script>
+    <title>Tisha Murvihill, Developer</title>
 </head>
 
 <body>
@@ -23,11 +23,15 @@
                 <img src="Resources/images/logo.gif" alt="TechSchool Logo" class="logo">
             </div>
 
-            <div class="mainNav">
+            <div class="mainNav .js--main-nav">
                 <p class="mainNavItem"><a href="#sampleDevelopment">Sample Web Designs</a></p>
 
                 <p class="mainNavItem"><a href="#sampleBackendCode">Sample back-end code</a></p>
-                <a href="#" class="mainNavItem mobileMenuIcon"><i class="ion-navicon js--nav-icon"></i></a>
+
+            </div>
+
+            <div class="mobileNav">
+                <a href="#"><i class="navIcon ion-navicon"></i></a>
             </div>
 
             <div class="mainHeading">
@@ -35,13 +39,13 @@
             </div>
 
             <div class="subTitle">
-                <h2 class="subTitleText">Click on tiles below for samples</h2>
+                <h2 class="subTitleText">Click on tiles below for samples...</h2>
             </div>
+
             <div class="tiles subgrid" id="sampleFrontEndProjects">
                 <a class="btn tile1" href="InnoGradSurvey/gradindex.html" target="_blank">Grad Survey Form<br>for Tech School<br></a>
                 <a class="btn tile2" href="#">Kids Soccer Site</a>
                 <a class="btn tile3" href="#">Workout <br>Web App</a>
-
             </div>
         </div>
     </header>
@@ -69,8 +73,8 @@
 
     <section id="sampleBackendCode">
         <h2>Sample Backend Code</h2>
-        <div class="row">
-            <img src="Resources/css/images/underconstruction2mytint.gif">
+        <div class="backEndGrid">
+            <img class="backEndGridItem" src="Resources/css/images/underconstruction2mytint.gif">
         </div>
     </section>
 
@@ -93,7 +97,7 @@
             <a href="https://www.take2tech.ca" class="weblink" target="_blank">www.take2tech.ca</a>
         </div>
 
-         <div class="footergriditem">
+        <div class="footergriditem">
 
             <p>&copy; 2018 by take2tech.ca. All rights reserved.</p>
 
